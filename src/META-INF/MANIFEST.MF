@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: lib/poi-ooxml-schemas-3.17.jar lib/poi-ooxml-3.17.jar lib/poi-3.17.jar
+  lib/jt400.jar lib/xbean.jar
+Main-Class: com.alexlm78.farsi.Main
+
