@@ -1,0 +1,31 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id "io.freefair.lombok" version "6.3.0"
+    id 'java'
+    id 'application'
+}
+
+group = 'com.alexlm78'
+version = '1.1'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.6.2'
+    implementation 'org.apache.poi:poi:5.1.0'
+
+    runtimeOnly 'com.oracle.database.jdbc:ojdbc8:21.4.0.0.1'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'com.alexlm78.farsi.FarsiApplication'
+}
